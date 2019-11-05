@@ -27,7 +27,7 @@ router.post('/send_message', async (req, res, next) => {
 
   try {
     if(ENVIRONMENT === 'production' || ENVIRONMENT === 'staging') {
-      bot.sendMessage(CHAT,message);
+      bot.sendMessage(CHAT_ID,message);
     } else {
       console.log(message);
     }
