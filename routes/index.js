@@ -19,7 +19,6 @@ if(ENVIRONMENT === 'production') {
 router.post('/send_message', async (req, res, next) => {
   const message = req.body.message;
 
-  console.log(message);
   if(typeof message !== 'string') {
     res.status(500).json({err: "Invalid message"});
     return;

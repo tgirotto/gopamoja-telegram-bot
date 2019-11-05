@@ -1,11 +1,11 @@
 version: '2.1'
 
 services:
-  bot:
-    container_name: bot
+  zidane:
+    container_name: zidane
     build: .
     environment:
-      - ENVIRONMENT=production
+      - ENVIRONMENT={ENVIRONMENT}
     networks:
       - gopamoja
 
