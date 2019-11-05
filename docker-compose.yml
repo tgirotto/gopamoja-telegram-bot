@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  bot:
+    container_name: bot
+    build: .
+    environment:
+      - ENVIRONMENT=production
+    networks:
+      - gopamoja
+
+networks:
+  gopamoja:
+    external: true
