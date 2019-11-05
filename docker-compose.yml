@@ -5,7 +5,7 @@ services:
     container_name: zidane
     build: .
     environment:
-      - ENVIRONMENT={ENVIRONMENT}
+      - ENVIRONMENT=${ENVIRONMENT}
     networks:
       - gopamoja
 
