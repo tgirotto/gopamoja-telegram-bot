@@ -10,7 +10,7 @@ let CHAT_ID;
 let TelegramBot = require('node-telegram-bot-api');
 const env = require('../env.js');
 
-if(ENVIRONMENT === 'production') {
+if(ENVIRONMENT === 'production' || ENVIRONMENT === 'staging') {
   token = env.bot.token;
   bot = new TelegramBot(token, {polling: true});
   CHAT_ID = env.bot.chat_id;
