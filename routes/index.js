@@ -8,11 +8,12 @@ let bot;
 let token;
 let CHAT_ID;
 let TelegramBot = require('node-telegram-bot-api');
+const env = require('../env.js');
 
 if(ENVIRONMENT === 'production') {
-  token = '680504648:AAF_6NsJvKTWucf-Zlr-vwWkD9M0b78HZxc';
+  token = env.bot.token;
   bot = new TelegramBot(token, {polling: true});
-  CHAT_ID = -380605324;
+  CHAT_ID = env.bot.chat_id;
 }
 
 /* GET home page. */
