@@ -1,26 +1,26 @@
 var ENVIRONMENT = {
   production: {
     pg: {
-      user: 'gopamoja-app',
-      host: 'gopamoja-db-1-do-user-6613101-0.db.ondigitalocean.com',
-      database: 'gopamoja-pool',
-      password: 'muyuaq0b3zjekgqg',
-      port: 25061,
+      user: '',
+      host: '',
+      database: '',
+      password: '',
+      port: ,
       ssl: require
     },
     bot: {
-      token: '680504648:AAF_6NsJvKTWucf-Zlr-vwWkD9M0b78HZxc',
-      chat_id: -380605324,
+      token: '',
+      chat_id: ,
       host: 'https://bot.gopamoja.com'
     }
   },
   development: {
     pg: {
-      user: 'gopamoja-app',
-      host: 'gopamoja-db-1-do-user-6613101-0.db.ondigitalocean.com',
-      database: 'gopamoja-dev',
-      password: 'muyuaq0b3zjekgqg',
-      port: 25061,
+      user: '',
+      host: '',
+      database: '',
+      password: '',
+      port: ,
       ssl: require
     },
     bot: {
@@ -31,16 +31,16 @@ var ENVIRONMENT = {
   },
   staging: {
     pg: {
-      user: 'gopamoja-app',
-      host: 'gopamoja-db-1-do-user-6613101-0.db.ondigitalocean.com',
-      database: 'gopamoja-staging',
-      password: 'muyuaq0b3zjekgqg',
-      port: 25061,
+      user: '',
+      host: '',
+      database: '',
+      password: '',
+      port: ,
       ssl: require
     },
     bot: {
-      token: '1037429611:AAEd_vsl6Lx5GR4b8-3hVN-YJ2YRObeTtaQ',
-      chat_id: -320876192,
+      token: '',
+      chat_id: ,
       host: 'https://test.bot.gopamoja.com'
     }
   }
